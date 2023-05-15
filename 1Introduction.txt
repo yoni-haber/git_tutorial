@@ -1,0 +1,25 @@
+Git is a version control system which allows you to track and make changes to files
+Used for collaboration on a project or by individual developers
+A repository contains a collection of files and version information
+The repository tracks all changes made to a file over time
+Git records and stores these changes, allowing you to reference them as needed.
+
+git init - to initialise a new Git project 
+This command sets up all the toold Git needs to begin tracking changes made to the project 
+
+A Git project has a Git workflow which can be thought of having 3 parts:
+A working directory - creating, editing, deleting and organising files
+A staging area - list changes you make to the working directory 
+A repository - where Git permanently stores those changes as different versions of the project
+
+In Git, we save changes with a commit.
+You can check the status of changing the contents of the working directory using 'git status' 
+
+For Git to start tracking, the file needs to be added to the staging area using 'git add filename'
+
+If content is added to the file you can check the differences between the working directory and the staging area with 'git diff filename'
+
+A commit permanently stores chnages from the staging area inside the repository using 'git commit -m', followed by a message that describes the point of the commit
+commit messages must be in " ", written in present tense and should be less than 50 characters
+
+
