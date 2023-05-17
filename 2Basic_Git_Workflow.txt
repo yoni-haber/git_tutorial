@@ -1,2 +1,23 @@
-Basic workflow
-Workflow
+git init tells git to start tracking changes
+
+A project using Git has a working directory (on VSCode), a staging area (the changes made to the working directory), and a repository (git permanently stores changes as different versions)
+To put code in the staging area from the working directory use a git add .
+To permanently store the changes use a git commit -m ""
+
+git status shows all changes since the previous commit (untracked files have not been added to the staging area)
+git add filename will add the file to the staging area - you can also do git add filename filename
+using a . instead of the filename will select all the files that the command line is running in
+
+If you alter a file in the working directory after it was put in the staging area you can see the differences using git diff filename 
+git commit -m "" permanently stores changes from the staging area to the repository 
+
+git log allows you to view the commit history 
+git log --all shows commit history from all branches
+git log --all --graph shows a graphical representation of commit history 
+
+The commit you are currently on is called the HEAD and is most often the most recent commit
+To see the head commit: git show HEAD - this will output everything from a git log for the HEAD commit plus all the file changes that were committed
+
+git checkout (HEAD) filename will restore the file in your WORKING directory to how it was when you last made a commit 
+
+You can unstage a file added to the staging area using git reset HEAD filename - this does not discard changes to the file
